@@ -1,1 +1,40 @@
+$base1:   #d7cec7 !default;
+$base2:   #565656 !default;
+$base3:   #76323f !default;
+$base4:   #c09f80 !default;
+$base5:   #494e6b !default;
+$base6:   #98878f !default;
+$base7:   #985e6d !default;
+$base8:   #192231 !default;
+
+
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+
+$theme-colors: map-merge(
+    (
+  "uno":        $base1,
+  "dos":        $base2,
+  "tres":       $base3,
+  "cuatro":     $base4, 
+  "alfa":       $base5,
+  "beta":       $base6,
+  "gama":       $base7,
+  "delta":      $base8
+  
+),$theme-colors);
+
 @import "../node_modules/bootstrap/scss/bootstrap";
